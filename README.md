@@ -17,3 +17,11 @@ def my_view(request):
 
     return redirect(download_url)
 ```
+
+In settings.py, add your AWS access keys and the bucket name you have your files stored in.
+
+```py
+AWS_STORAGE_BUCKET_NAME = 'bucket_name'
+AWS_ACCESS_KEY_ID = 'your_aws_key_id'
+AWS_SECRET_ACCESS_KEY = 'your_aws_secret_key'
+```
