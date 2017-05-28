@@ -23,7 +23,7 @@ def zip(src, dst):
             zf.write(absname, arcname)
     zf.close()
 
-def generate_zips3(path):
+def generate_url(path):
     """
     Given the path to bucket directory, each file under that prefix is
     downloaded to a temporary directory of the same name. The folder is then
@@ -81,7 +81,7 @@ def generate_zips3(path):
     bucket.configure_lifecycle(lifecycle)
 
     k = Key(bucket)
-    k.key = 's3zip/' + temp_directory + '.zip'
+    k.key = 'zips3/' + temp_directory + '.zip'
     k.set_contents_from_file(open(temp_directory+'.zip'))
     s3 = S3Connection(settings.AWS_ACCESS_KEY_ID,
                       settings.AWS_SECRET_ACCESS_KEY,
