@@ -6,6 +6,14 @@ In this Python module, given the path to a folder in S3, a zip file will be crea
 
 The zip will be given an expiration of 1 day so that it auto removes itself ASAP. A URL is generated for the zip file and returned, so that in your Django view, you can redirect the user to that link to instantly download the files.
 
+## Install
+This package is not pip installable (yet!)
+
+```sh
+cd django_zips3
+sudo python setup.py install
+```
+
 ## Example usage
 ```py
 from django_zips3 import generate_url
@@ -26,4 +34,4 @@ AWS_ACCESS_KEY_ID = 'your_aws_key_id'
 AWS_SECRET_ACCESS_KEY = 'your_aws_secret_key'
 ```
 
-Check out the example django project for more information :)
+Check out the example django project for more information :) (It is currently very empty)

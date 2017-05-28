@@ -1,0 +1,7 @@
+__init__.py
+django_zips3.py
+setup.py
+django_zips3.egg-info/PKG-INFO
+django_zips3.egg-info/SOURCES.txt
+django_zips3.egg-info/dependency_links.txt
+django_zips3.egg-info/top_level.txt
