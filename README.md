@@ -25,3 +25,5 @@ AWS_STORAGE_BUCKET_NAME = 'bucket_name'
 AWS_ACCESS_KEY_ID = 'your_aws_key_id'
 AWS_SECRET_ACCESS_KEY = 'your_aws_secret_key'
 ```
+
+Check out the example django project for more information :)
